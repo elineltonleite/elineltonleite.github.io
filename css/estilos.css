@@ -1,10 +1,10 @@
 *{
 margin:0;
-paddin:0;
+paddin:10px;
 font-family: 'Roboto', sans-serif;	
 }
 header{
-  padding:10px;
-  border-bottom:1px solid gray;
+  border-bottom:1px solid #cecece;
   width:80px;
 }
+
