@@ -13,14 +13,14 @@ nav{
   color:white;
 }
 ul{
-  display:inline-block;
+  display:inline;
 }
 li{
   border-left:1px solid #ffffff;
   padding:5px;
 }
 li:hover{
-  background:rgb(225,80,150);
+  background:rgb(225,80,120);
   cursor:pointer;
 }
 main{
