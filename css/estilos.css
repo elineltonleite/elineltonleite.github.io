@@ -20,7 +20,8 @@ li{
   padding:5px;
 }
 li:hover{
-  background:rgb(225,80,70);
+  background:rgb(225,80,150);
+  cursor:pointer;
 }
 main{
   padding:10px;
