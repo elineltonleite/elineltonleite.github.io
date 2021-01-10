@@ -12,12 +12,19 @@ nav{
   background:rgb(225,80,100);
   color:white;
 }
+a{
+  text-decoration:none;
+}
+a,a:visited{
+color:white;
+}
 ul{
   display:inline-block;
+  list-style:none;
 }
 li{
   border-left:1px solid #ffffff;
-  padding:5px;
+  padding:10px;
 }
 li:hover{
   background:rgb(225,80,120);
