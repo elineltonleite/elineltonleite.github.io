@@ -16,11 +16,11 @@ ul{
   display:inline-block;
 }
 li{
-  border-left:1px solid white;
+  border-left:1px solid #ffffff;
   padding:5px;
 }
 li:hover{
-  background:rgb(190,120,70);
+  background:rgb(225,80,70);
 }
 main{
   padding:10px;
