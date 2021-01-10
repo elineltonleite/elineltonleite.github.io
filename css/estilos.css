@@ -4,9 +4,23 @@ padding:0px;
 font-family: 'Roboto', sans-serif;	
 }
 header{
-  border-bottom:2px solid #cecece;
+  /*border-bottom:2px solid #cecece;*/
   height:80px;
   padding:10px;
+}
+nav{
+  background:rgb(225,80,100);
+  color:white;
+}
+ul{
+  display:inline-block;
+}
+li{
+  border-left:1px solid white;
+  padding:5px;
+}
+li:hover{
+  background:rgb(190,120,70);
 }
 main{
   padding:10px;
