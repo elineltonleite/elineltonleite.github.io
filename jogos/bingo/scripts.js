@@ -1,11 +1,11 @@
  var historico=[] 
 
  function resultado(){
-	numSorteado = parseInt(Math.floor(Math.random() * 90)+1)
+	numSorteado = parseInt(Math.floor(Math.random() * 99)+1)
 	
 	if(historico.includes(numSorteado)){
 		//alert('numero '+numSorteado+'já foi sorteado')
-		numSorteado = parseInt(Math.floor(Math.random() * 90)+1)
+		numSorteado = parseInt(Math.floor(Math.random() * 99)+1)
 		resultado()
 	}
 	
@@ -29,7 +29,7 @@ document.getElementById("topo").innerHTML=writeHtml;
 function montarQuadro(result){
 	var num = ""
 	
-	for(j = 1; j <= 90; j++){
+	for(j = 1; j <= 99; j++){
 		
 		if(result.includes(j)){
 			bg = "red"
