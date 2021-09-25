@@ -5,7 +5,7 @@ font-family: 'Roboto', sans-serif;
 }
 header{
   /*border-bottom:2px solid #cecece;*/
-  height:80px;
+  height:50px;
   padding:10px;
 }
 nav{
@@ -16,18 +16,18 @@ a{
   text-decoration:none;
 }
 a,a:visited{
-color:white;
+	color:white;
 }
 ul{
-  display:inline-block;
-  list-style:none;
+	list-style:none;
 }
 li{
-  border-left:1px solid #ffffff;
+ /* border-left:1px solid #ffffff;*/
   padding:10px;
+  display:inline-block;
 }
 li:hover{
-  background:rgb(225,80,120);
+  background:rgb(0, 0, 0);
   cursor:pointer;
 }
 main{
