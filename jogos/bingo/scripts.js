@@ -1,10 +1,15 @@
+window.onload = function(){
+	document.getElementById('num-sorteado').innerHTML='00'
+}
+
  var historico=[] 
 
- function resultado(){
+
+
+function resultado(){
 	numSorteado = parseInt(Math.floor(Math.random() * 99)+1)
 	
 	if(historico.includes(numSorteado)){
-		//alert('numero '+numSorteado+'já foi sorteado')
 		numSorteado = parseInt(Math.floor(Math.random() * 99)+1)
 		resultado()
 	}

@@ -12,7 +12,7 @@ header, main, footer, #painel, #quadro{
 	text-align:center;
 }
 header, main,footer{border:none;}
-footer{background:rgb(225,80,100);padding:10px 4px;}
+footer{background:radial-gradient(yellow,red);padding:10px 4px;}
 
 #bola-sorteada{
 	width:100px;
@@ -20,7 +20,8 @@ footer{background:rgb(225,80,100);padding:10px 4px;}
 	border-radius:60px;
 	margin:5px auto;
 	/*background:#a2fe2b;*/
-	background:yellow;
+	/*background:yellow;*/
+	background:radial-gradient(yellow,red);
 	padding:5px;
 	text-align:center;
 	border:2px solid black;
@@ -32,7 +33,6 @@ footer{background:rgb(225,80,100);padding:10px 4px;}
 	margin:5px auto;
 	border-radius:10px;
 	padding:2px;
-	
 }
 #num-sorteado{
 	background:white;
@@ -58,13 +58,11 @@ footer{background:rgb(225,80,100);padding:10px 4px;}
 }
 .bola{
 	border:2px solid black;
-	box-shadow:0 10px 3px #cecece;
-	
+	box-shadow:0 10px 3px #cecece;	
 }
 .bola-menor{
 	width:20px;
-	height:20px;
-	
+	height:20px;	
 }
 .letras{ 
 	margin-top:8px;
@@ -73,8 +71,14 @@ footer{background:rgb(225,80,100);padding:10px 4px;}
 	text-shadow: 3px 2px 3px GrayText;
 }
 button{
-	padding:2px;
+	padding:5px 10px;
 	cursor:pointer;
+}
+button:hover{
+	background:rgb(50,120,250);
+	border-radius:3px;
+	border:2px solid rgb(50,220,20);	
+	background:radial-gradient(lightgreen,green);
 }
 .cor-0{background:blue;}
 .cor-1{background:red}
