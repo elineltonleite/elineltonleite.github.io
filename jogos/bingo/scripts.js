@@ -5,7 +5,6 @@ window.onload = function(){
  var historico=[] 
 
 
-
 function resultado(){
 	numSorteado = parseInt(Math.floor(Math.random() * 99)+1)
 	
@@ -19,7 +18,9 @@ function resultado(){
 	
 	montarQuadro(historico)
 	document.getElementById('num-sorteado').innerHTML= numSorteado
-
+	
+	
+	
  }
 document.getElementById("btn-sortear").onclick = resultado
 
@@ -50,6 +51,28 @@ function montarQuadro(result){
 	
 	}
 	document.getElementById("quadro").innerHTML=num;
+	
+	n1= result[result.length -1]
+	n2= result[result.length -2]
+	n3= result[result.length -3]
+	n4= result[result.length -4]
+	n5= result[result.length -5]
+	if(n2==undefined){
+		n2="-"
+	}
+	if(n3==undefined){
+		n3="-"
+	}
+	if(n4==undefined){
+		n4="-"
+	}
+	if(n5==undefined){	
+		n5="-"
+	}
+	
+	document.getElementById('painel').innerHTML=
+	'<div class="bola-menor bol-sup">'+n5+'</div><div class="bola-menor bol-sup">'+n4+'</div><div class="bola-menor bol-sup"> '+n3+'</div><div class="bola-menor bol-sup"> '+n2+'</div><div class="bola-menor bol-sup-chamada"> '+n1+'</div>'
+
 }
 montarQuadro()
 

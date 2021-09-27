@@ -56,6 +56,14 @@ footer{background:radial-gradient(yellow,red);padding:10px 4px;}
 	border-radius:30px;
 	color:white;
 }
+.bol-sup{
+	background:radial-gradient(pink, purple);
+	padding:10px;
+}
+.bol-sup-chamada{
+	background:radial-gradient(gray, black);
+	padding:10px;
+}
 .bola{
 	border:2px solid black;
 	box-shadow:0 10px 3px #cecece;	

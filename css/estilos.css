@@ -12,10 +12,11 @@ nav{
   background:rgb(225,80,100);
   color:white;
 }
-a{
+ul a{
   text-decoration:none;
+  color:black;
 }
-a,a:visited{
+ul a, ul a:visited{
 	color:white;
 }
 ul{
@@ -32,4 +33,30 @@ li:hover{
 }
 main{
   padding:10px;
+}
+.box{
+	width:100px;
+	text-align:center;
+	display:inline-block;
+	background:#eee;
+	padding:5px;
+	color:black;
+	border-radius:5px;
+}
+#icon-bol{
+	width:60px;
+	height:60px;
+	border-radius:35px;
+	padding:2px;
+	margin:0 auto;
+	background:radial-gradient(yellow,red);
+	border:2px solid black;
+}
+#bol-num{
+	background:white;
+	width:20px;
+	padding:5px;
+	margin:10px auto;
+	font-weight:bold;
+	border-radius:20px;
 }
