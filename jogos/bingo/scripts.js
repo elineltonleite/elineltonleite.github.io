@@ -2,27 +2,31 @@ window.onload = function(){
 	document.getElementById('num-sorteado').innerHTML='00'
 }
 
- var historico=[] 
-
-
+var historico=[] 
 function resultado(){
+	
 	numSorteado = parseInt(Math.floor(Math.random() * 99)+1)
 	
 	if(historico.includes(numSorteado)){
-		numSorteado = parseInt(Math.floor(Math.random() * 99)+1)
 		resultado()
+	}else{
+	
+		historico.push(numSorteado)
+		//console.log(historico)
+		montarQuadro(historico)
+		document.getElementById('num-sorteado').innerHTML= numSorteado
+		
+		if(historico.length >= 99){
+			//window.reload
+			document.getElementById('inf').innerHTML= 'Todas as bolas já foram chamadas <button id="btn-refresh" onclick="recarregar()">Reset</button>'
+		}
 	}
-	
-	historico.push(numSorteado)
-	//console.log(historico)
-	
-	montarQuadro(historico)
-	document.getElementById('num-sorteado').innerHTML= numSorteado
-	
-	
-	
+
  }
 document.getElementById("btn-sortear").onclick = resultado
+function recarregar(){
+	window.location.reload()	
+}
 
 
 var writeHtml ="", i;
