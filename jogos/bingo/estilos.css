@@ -13,6 +13,11 @@ header, main, footer, #painel, #quadro, #inf{
 }
 header, main,footer{border:none;}
 footer{background:radial-gradient(yellow,red);padding:10px 4px;}
+.voltar{
+	width:370px;
+	margin:5px auto;
+	text-align:center;
+}
 #inf{
 	background:radial-gradient(#eee,#ccc)
 }

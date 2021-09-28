@@ -1,11 +1,12 @@
 window.onload = function(){
 	document.getElementById('num-sorteado').innerHTML='00'
+	qtdBolas  = prompt('Informe o total de bolas')
 }
 
 var historico=[] 
 function resultado(){
 	
-	numSorteado = parseInt(Math.floor(Math.random() * 99)+1)
+	numSorteado = parseInt(Math.floor(Math.random() * qtdBolas)+1)
 	
 	if(historico.includes(numSorteado)){
 		resultado()
@@ -16,18 +17,15 @@ function resultado(){
 		montarQuadro(historico)
 		document.getElementById('num-sorteado').innerHTML= numSorteado
 		
-		if(historico.length >= 99){
-			//window.reload
+		if(historico.length >= qtdBolas){
 			document.getElementById('inf').innerHTML= 'Todas as bolas já foram chamadas <button id="btn-refresh" onclick="recarregar()">Reset</button>'
 		}
 	}
 
  }
 document.getElementById("btn-sortear").onclick = resultado
-function recarregar(){
-	window.location.reload()	
-}
 
+function recarregar(){window.location.reload()}
 
 var writeHtml ="", i;
 var letras =['B','I','N','G','O'];
@@ -39,7 +37,7 @@ document.getElementById("topo").innerHTML=writeHtml;
 function montarQuadro(result){
 	var num = ""
 	
-	for(j = 1; j <= 99; j++){
+	for(j = 1; j <= qtdBolas; j++){
 		
 		if(result.includes(j)){
 			bg = "red"
