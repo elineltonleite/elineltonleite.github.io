@@ -34,6 +34,12 @@ li:hover{
 main{
   padding:10px;
 }
+#slide-img{
+	text-align:center
+}
+#slide-img img{
+	width:80%;	
+}
 .box{
 	width:100px;
 	text-align:center;
