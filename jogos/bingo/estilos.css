@@ -3,13 +3,18 @@
 	padding:0;
 	font-family:arial;
 }
-header, main, footer, #painel, #quadro, #inf{
+header, main, footer, #painel, #quadro, #inf, #parciais{
 	width:370px;
 	margin:5px auto;
 	border:2px solid #ccc;
 	padding:2px;
 	border-radius:5px;	
 	text-align:center;
+}
+#parciais{
+	border: none;
+	color:rgb(130, 99, 201);
+	font-weight: bold;
 }
 header, main,footer{border:none;}
 footer{background:radial-gradient(yellow,red);padding:10px 4px;}
@@ -42,12 +47,14 @@ footer{background:radial-gradient(yellow,red);padding:10px 4px;}
 	padding:2px;
 }
 #num-sorteado{
-	background:white;
-	margin:25px auto;
+	/*background:white;*/
+	background:radial-gradient(white,white,#cecece);
+	margin:15px auto;
 	padding:12px 5px 0 5px;
-	border-radius:30px;
-	width:35px;
-	height:35px;
+	border-radius:40px;
+	border:2px solid #cecece;
+	width: 50px;
+	height:50px;
 	font-weight:bold;
 	font-size:20px;
 }
@@ -61,39 +68,57 @@ footer{background:radial-gradient(yellow,red);padding:10px 4px;}
 	margin:5px;
 	text-align:center;	
 	border-radius:30px;
-	color:white;
+	font-weight: bold;
 }
 .bol-sup{
-	background:radial-gradient(pink, purple);
+	/*background:radial-gradient(pink, purple);*/
+	background:radial-gradient(yellow,red);
 	padding:10px;
 }
 .bol-sup-chamada{
-	background:radial-gradient(gray, black);
+	background:radial-gradient(rgb(235, 115, 115), rgb(83, 12, 12));
 	padding:10px;
 }
 .bola{
+	color:white;
 	border:2px solid black;
 	box-shadow:0 10px 3px #cecece;	
 }
 .bola-menor{
 	width:20px;
-	height:20px;	
+	height:20px;
+	color:black;	
 }
 .letras{ 
 	margin-top:8px;
 	font-size:20px;
 	font-weight:bold;
-	text-shadow: 3px 2px 3px GrayText;
+	text-shadow: 3px 2px 3px Gray;
 }
 #btn-sortear{
-	padding:5px 10px;
+	padding:5px 25px;
 	cursor:pointer;
+	font-weight: bold;
 }
 #btn-sortear:hover{
-	background:rgb(50,120,250);
 	border-radius:3px;
 	border:2px solid rgb(50,220,20);	
 	background:radial-gradient(lightgreen,green);
+}
+#btn-refresh{
+	padding:3px 15px;
+	background:rgb(50,120,250);
+	border: none;
+	border-radius: 5px;
+	font-weight:bold;
+	text-shadow: 3px 2px 3px black;
+	color:white;
+}
+#btn-refresh:hover{
+	cursor: pointer;
+	color:black;
+	text-shadow: none;
+	
 }
 .cor-0{background:blue;}
 .cor-1{background:red}
