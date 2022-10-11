@@ -11,7 +11,12 @@ window.onload = function(){
 		}
 		if(totFaltaSortear > 0){
 			totFaltaSortear --;
-		}	
+			somBolaCaindo()
+			if(totFaltaSortear==0){
+				setTimeout(somFimJogo,700)
+			}
+		}
+			
 		document.getElementById('parciais').innerHTML= 'Sorteado: '+ totSorteado +' bola(s) &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Resta: '+ totFaltaSortear +' bola(s)';
 		resultado()
 	}
@@ -32,7 +37,7 @@ window.onload = function(){
 			document.getElementById('num-sorteado').innerHTML=letraBola(numSorteado) +'<br>'+ numSorteado
 			
 			if(historico.length >= qtdBolas){
-				document.getElementById('inf').innerHTML= 'Todas as bolas já foram chamadas <button id="btn-refresh" onclick="recarregar()">Novo jogo</button>'
+				document.getElementById('inf').innerHTML= '<span id="spanDivInf">Fim do jogo</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp  <button id="btn-refresh" onclick="recarregar()">Novo jogo</button>'
 			}
 		}
 		function letraBola(numSorteado){
@@ -69,16 +74,16 @@ window.onload = function(){
 		for(j = 1; j <= qtdBolas; j++){
 		// cria variavél para receber cor e adiconar  na classe div bola-menor
 			if(result.includes(j)){
-				bg = "red;color:white;"
+				style = "background:radial-gradient(rgb(243, 91, 91), rgb(231, 40, 40));color:white;text-shadow:2px 2px  rgb(151, 33, 33);"
 			}else{
-				bg ="#cecece;color:black"
+				style ="background:#cecece;color:black;"
 			}
 
 		// adiciona 0 aos numeros menores que 10 
 		if(j<10){
-			num +='<div class="bola-menor" style="background:'+bg+'"><div class="numero">0'+j+ '</div></div>';
+			num +='<div class="bola-menor" style="'+style+'"><div class="numero">0'+j+ '</div></div>';
 		}else{
-			num +='<div class="bola-menor" style="background:'+bg+';"><div class="numero">'+j+ '</div></div>';
+			num +='<div class="bola-menor" style="'+style+'"><div class="numero">'+j+ '</div></div>';
 		}
 	
 	} // fechar o FOR
@@ -112,3 +117,17 @@ window.onload = function(){
 	montarQuadro()
 }
 function recarregar(){window.location.reload()}
+function somBolaCaindo(){
+	var music = new Audio('../sons/Plastic Roll 02.mp3')
+	music.play();
+	//music.loop =false;
+	//music.playbackRate = 1; // velocidade do audio
+	//music.pause();	 		
+}
+function somFimJogo(){
+	var music = new Audio('../sons/Bell 01.mp3')
+	music.play();
+	//music.loop =false;
+	//music.playbackRate = 1; // velocidade do audio
+	//music.pause();	 		
+}
