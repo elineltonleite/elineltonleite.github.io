@@ -1,5 +1,5 @@
 window.onload = function(){
-	document.getElementById('num-sorteado').innerHTML='*<br>00'
+	document.getElementById('num-sorteado').innerHTML='*  *<br>---'
 	qtdBolas  = parseInt(prompt('Informe o total de bolas'))
 	
 	var totSorteado= 0;

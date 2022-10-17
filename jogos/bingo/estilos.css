@@ -105,14 +105,17 @@ footer{
 	text-shadow: 3px 2px 3px Gray;
 }
 #btn-sortear{
-	padding:5px 25px;
+	padding:10px 40px;
 	cursor:pointer;
 	font-weight: bold;
+	border-radius: 10px;
+	border:2px solid rgb(50,220,20);
 }
 #btn-sortear:hover{
 	border-radius:3px;
 	border:2px solid rgb(50,220,20);	
 	background:radial-gradient(lightgreen,green);
+	border-radius: 10px;
 }
 #btn-refresh{
 	padding:4px 15px;
