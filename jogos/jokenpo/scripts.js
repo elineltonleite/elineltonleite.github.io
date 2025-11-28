@@ -59,6 +59,7 @@ function jokenpo(jogador){
     document.getElementById("computadorPlacar").innerHTML= c
     document.getElementById("computadorOpcao").innerHTML= computador
     total = empates + c + j
-    resultado += `<h1>${vencedor}</h1>` + `Total de Jogadas:${total} `+`<p>Empates: ${empates}</p>`
+    resultado += `<h1 class="h1Vencedor">${vencedor}</h1>` + `Total de Jogadas:${total} `+`<p>Empates: ${empates}</p>`
     document.getElementById("resultado").innerHTML = resultado
 }
+
