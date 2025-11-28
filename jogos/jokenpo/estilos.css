@@ -44,8 +44,9 @@ img{
 
 .divTopo{color: red;}
 .divVoltar{
-    margi:0
+    margi:10px auto;
     color:yellow;
 }
-.h1Vencedor{color:yellow}
+.h1Vencedor{color:yellow;}
+
 
