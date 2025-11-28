@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 70%;
+    height: auto;
+    margin:150px auto;
+    background-color: #121312;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.boxMao{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 100px;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    background-color: #121312;
+}
+.boxMao:hover{
+    cursor: pointer;
+}
+.boxMao:hover p{color:rgb(164, 194, 29)}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.divPrincipal{
+    width: 100%;
+}
+.divPrincipal div{display: inline-block;}
+.divLateral{width: 20%;}
+#resultado{width:50%;}
+.divPrincipal img{
+    width: 50px;
+} 
+.divTopo{color: red;}
